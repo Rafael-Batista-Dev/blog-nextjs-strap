@@ -28,6 +28,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
+
         <h1 className={styles.title}>
           Blog<a href="https://nextjs.org">CAPO Viagens</a>
         </h1>
@@ -36,8 +37,9 @@ export default function Home() {
           Postagens{' '}
           <code className={styles.code}> legais</code>
         </p>
-
-        <Posts />
+        <div className={styles.grid}>
+          <Posts />
+        </div>
 
       </main>
 
