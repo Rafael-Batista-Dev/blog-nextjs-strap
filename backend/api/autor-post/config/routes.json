@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/autor-posts",
+      "handler": "autor-post.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/autor-posts/count",
+      "handler": "autor-post.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/autor-posts/:id",
+      "handler": "autor-post.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/autor-posts",
+      "handler": "autor-post.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/autor-posts/:id",
+      "handler": "autor-post.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/autor-posts/:id",
+      "handler": "autor-post.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

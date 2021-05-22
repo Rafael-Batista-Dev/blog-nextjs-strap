@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "autor_posts",
+  "info": {
+    "name": "autorPost"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nomeAutor": {
+      "type": "string"
+    }
+  }
+}
