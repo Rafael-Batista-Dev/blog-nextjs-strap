@@ -9,17 +9,29 @@ import axios from 'axios'
 export default function Home() {
 
   const [posts, setPosts] = useState([])
-  const { Posts } = usePosts(posts)
-  const { FiltroUI } = useFilter()
+  const [filtradas, setFiltradas] = useState([])
+
+  const { Posts } = usePosts(filtradas)
+  const { categoria, FiltroUI } = useFilter()
 
   useEffect(() => {
-    const obterPosts = async () => {
-      const resultado = await axios.get('http://localhost:1337/posts')
-      setPosts(resultado.data);
-      //console.log(resultado.data);
+
+    if (categoria) {
+      const filtradas = posts.filter(post => post.categoria.id == categoria)
+      //console.log(filtradas);
+      setFiltradas(filtradas);
+    } else {
+      const obterPosts = async () => {
+        const resultado = await axios.get('http://localhost:1337/posts')
+        setPosts(resultado.data);
+        setFiltradas(resultado.data);
+        //console.log(resultado.data);
+        console.log(categoria);
+      }
+      obterPosts()
     }
-    obterPosts()
-  }, [])
+
+  }, [categoria])
 
   return (
     <div className={styles.container}>

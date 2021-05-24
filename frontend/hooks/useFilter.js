@@ -35,7 +35,7 @@ const useFilter = () => {
 
   )
 
-  return { FiltroUI }
+  return { categoria, FiltroUI }
 
 }
 
