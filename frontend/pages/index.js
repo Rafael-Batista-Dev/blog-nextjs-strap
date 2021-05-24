@@ -3,12 +3,14 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import usePosts from '../hooks/usePosts'
+import useFilter from '../hooks/useFilter'
 import axios from 'axios'
 
 export default function Home() {
 
   const [posts, setPosts] = useState([])
   const { Posts } = usePosts(posts)
+  const { FiltroUI } = useFilter()
 
   useEffect(() => {
     const obterPosts = async () => {
@@ -36,6 +38,9 @@ export default function Home() {
         <p className={styles.description}>
           Postagens{' '}
           <code className={styles.code}> legais</code>
+        </p>
+        <p className={styles.description}>
+          <FiltroUI />
         </p>
         <div className={styles.grid}>
           <Posts />
