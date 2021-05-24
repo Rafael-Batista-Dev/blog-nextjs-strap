@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 import products from '../../products.json'
 import { fromImageToUrl } from '../../utils/urls'
+import { twoDecimals } from '../../utils/format'
 import axios from 'axios'
 
 export default function Home() {
@@ -35,7 +36,7 @@ export default function Home() {
                 <div>{product.nome}</div>
                 <div><img src={fromImageToUrl(product.foto)} width={200} height={200} /></div>
                 {/* <div>{product.descricao}</div> */}
-                <div>R$: {product.preco}</div>
+                <div>R$: {twoDecimals(product.preco)}</div>
               </a>
             </Link>
           ))}

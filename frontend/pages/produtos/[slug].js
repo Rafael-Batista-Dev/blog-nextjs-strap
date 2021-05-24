@@ -5,6 +5,7 @@ import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 import products from '../../products.json'
 import { fromImageToUrl } from '../../utils/urls'
+import { twoDecimals } from '../../utils/format'
 import axios from 'axios'
 
 const product = products[0]
@@ -39,7 +40,7 @@ export default function Product() {
             <div><h2 style={{ fontSize: "20px", textAlign: 'justify' }}>{product.nome}</h2></div>
             <div style={{ padding: " 20px 0" }}><img src={fromImageToUrl(product.foto)} width={200} height={200} /></div>
             <div><p style={{ fontSize: "12px", textAlign: "justify" }}>{product.descricao}</p></div>
-            <div style={{ textAlign: "left" }}><h3>R$: {product.preco}</h3></div>
+            <div style={{ textAlign: "left" }}><h3>R$: {twoDecimals(product.preco)}</h3></div>
           </div>
         </div>
 
