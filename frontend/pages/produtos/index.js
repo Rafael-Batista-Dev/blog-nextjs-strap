@@ -3,12 +3,13 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
-import products from '../../products.json'
-import { fromImageToUrl } from '../../utils/urls'
+import { fromImageToUrl, API_URL } from '../../utils/urls'
 import { twoDecimals } from '../../utils/format'
 import axios from 'axios'
 
-export default function Home() {
+export default function Produtos({ produtos }) {
+
+  console.log(produtos);
 
 
   return (
@@ -30,13 +31,13 @@ export default function Home() {
           <code className={styles.code}> legais</code>
         </p>
         <div className={styles.grid} style={{ width: "650px" }}>
-          {products.map(product => (
-            <Link href={`/produtos/${product.slug}`}>
-              <a className={styles.card} key={product.name}>
-                <div>{product.nome}</div>
-                <div><img src={fromImageToUrl(product.foto)} width={200} height={200} /></div>
-                {/* <div>{product.descricao}</div> */}
-                <div>R$: {twoDecimals(product.preco)}</div>
+          {produtos.map(produto => (
+            <Link href={`/produtos/${produto.slug}`}>
+              <a className={styles.card} key={produto.slug}>
+                <div><h4 style={{ textAlign: "justify" }}>{produto.nome}</h4></div>
+                <div style={{ padding: " 20px 0", textAlign: "center" }} ><img src={fromImageToUrl(produto.foto)} width={200} height={200} /></div>
+                {/* <div>{produto.descricao}</div> */}
+                <div style={{ textAlign: "left" }}><h4>R$: {twoDecimals(produto.preco)}</h4></div>
               </a>
             </Link>
           ))}
@@ -58,4 +59,10 @@ export default function Home() {
       </footer>
     </div>
   )
+}
+
+export async function getStaticProps() {
+  const { data: produtos } = await axios.get(
+    `${API_URL}/produtos`);
+  return { props: { produtos } };
 }
