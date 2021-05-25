@@ -42,6 +42,9 @@
     "slug": {
       "type": "uid",
       "targetField": "nome"
+    },
+    "categoria_pro": {
+      "model": "categoria-pro"
     }
   }
 }

@@ -33,11 +33,11 @@ export default function Produtos({ produtos }) {
         <div className={styles.grid} style={{ width: "650px" }}>
           {produtos.map(produto => (
             <Link href={`/produtos/${produto.slug}`}>
-              <a className={styles.card} key={produto.slug}>
+              <a className={styles.card} key={produto.id}>
                 <div><h4 style={{ textAlign: "justify" }}>{produto.nome}</h4></div>
                 <div style={{ padding: " 20px 0", textAlign: "center" }} ><img src={fromImageToUrl(produto.foto)} width={200} height={200} /></div>
-                {/* <div>{produto.descricao}</div> */}
                 <div style={{ textAlign: "left" }}><h4>R$: {twoDecimals(produto.preco)}</h4></div>
+                <div><h4>Categoria: {produto.categoria_pro.nome_categoria_pro}</h4></div>
               </a>
             </Link>
           ))}

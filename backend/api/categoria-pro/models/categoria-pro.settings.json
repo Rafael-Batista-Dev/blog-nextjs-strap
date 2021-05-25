@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categoria_pros",
+  "info": {
+    "name": "categoria_pro"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nome_categoria_pro": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

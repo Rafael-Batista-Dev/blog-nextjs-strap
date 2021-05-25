@@ -14,6 +14,7 @@ const usePosts = (posts) => {
             <span style={{ color: "blue" }}>{post.categoria}</span>
             <span style={{ color: "red" }}>{post.autor_post}</span>
           </div> */}
+
         </a>
       ))}
     </>
