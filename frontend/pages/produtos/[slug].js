@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
 import { fromImageToUrl, API_URL } from '../../utils/urls'
 import { twoDecimals } from '../../utils/format'
@@ -62,19 +60,18 @@ export default function Product({ produto }) {
 
 
 export async function getStaticProps({ params: { slug } }) {
-  const produtos_res = await fetch(`${API_URL}/produtos/?slug=${slug}`)
-  const found = await produtos_res.json()
+  const { data: produtos_res } = await axios.get(`${API_URL}/produtos/?slug=${slug}`)
+  const produto = produtos_res[0]
 
   return {
     props: {
-      produto: found[0]
+      produto
     }
   }
 }
 
 export async function getStaticPaths() {
-  const produtos_res = await fetch(`${API_URL}/produtos/`)
-  const produtos = await produtos_res.json()
+  const { data: produtos } = await axios.get(`${API_URL}/produtos/`);
 
   return {
     paths: produtos.map(produto => ({
@@ -82,5 +79,4 @@ export async function getStaticPaths() {
     })),
     fallback: false
   }
-
 }
