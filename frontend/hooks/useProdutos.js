@@ -10,8 +10,8 @@ const useProdutos = (produtos) => {
   const Produtos = () => (
     <>
       {produtos.map(produto => (
-        <Link href={`/produtos/${produto.slug}`}>
-          <a className={styles.card} key={produto.id} target="_blank">
+        <Link href={`/produtos/${produto.slug}`} key={produto.id}>
+          <a className={styles.card} target="_blank">
             <div><h4 style={{ textAlign: "justify" }}>{produto.nome}</h4></div>
             <div style={{ padding: " 20px 0", textAlign: "center" }} ><img src={fromImageToUrl(produto.foto)} width={200} height={200} /></div>
             <div style={{ textAlign: "left" }}><h4>R$: {twoDecimals(produto.preco)}</h4></div>

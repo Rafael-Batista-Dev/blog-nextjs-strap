@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { API_URL } from '../utils/urls'
 import axios from 'axios'
 
 const useFilterCategoriaPro = () => {
@@ -9,9 +10,9 @@ const useFilterCategoriaPro = () => {
 
   useEffect(() => {
     const obterCategoria = async () => {
-      const resultado = await axios.get('http://localhost:1337/categoria-pros');
+      const resultado = await axios.get(`${API_URL}/categoria-pros`);
       setCategorias(resultado.data)
-      console.log(resultado.data);
+      // console.log(resultado.data);
     }
     obterCategoria();
   }, [])
