@@ -1,16 +1,39 @@
 import { useEffect, useState } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
-import Link from 'next/link'
-import styles from '../../styles/Home.module.css'
-import { fromImageToUrl, API_URL } from '../../utils/urls'
-import { twoDecimals } from '../../utils/format'
+import useProdutos from '../../hooks/useProdutos'
+import useFilterCategoriaPro from '../../hooks/useFilterCategoriaPro'
 import axios from 'axios'
+import { API_URL } from '../../utils/urls'
+import styles from '../../styles/Home.module.css'
 
-export default function Produtos({ produtos }) {
 
-  console.log(produtos);
+export default function Produtos() {
 
+  const [produtos, setProdutos] = useState([])
+  const [filtradas, setFiltradas] = useState([])
+
+  const { Produtos } = useProdutos(filtradas)
+  const { categoria, FiltroUI } = useFilterCategoriaPro()
+
+  useEffect(() => {
+
+    if (categoria) {
+      const filtradas = produtos.filter(produtos => produtos.categoria_pro.id == categoria)
+      //console.log(filtradas);
+      setFiltradas(filtradas);
+    } else {
+      const obterProdutos = async () => {
+        const resultado = await axios.get(`${API_URL}/produtos`)
+        setProdutos(resultado.data);
+        setFiltradas(resultado.data);
+        //console.log(resultado.data);
+        console.log(categoria);
+      }
+      obterProdutos()
+    }
+
+  }, [categoria])
 
   return (
     <div className={styles.container}>
@@ -27,20 +50,11 @@ export default function Produtos({ produtos }) {
         </h1>
 
         <p className={styles.description}>
-          Produtos{' '}
-          <code className={styles.code}> legais</code>
+          Categoria{' '}
+          <code className={styles.code}> <FiltroUI /></code>
         </p>
         <div className={styles.grid} style={{ width: "650px" }}>
-          {produtos.map(produto => (
-            <Link href={`/produtos/${produto.slug}`}>
-              <a className={styles.card} key={produto.id}>
-                <div><h4 style={{ textAlign: "justify" }}>{produto.nome}</h4></div>
-                <div style={{ padding: " 20px 0", textAlign: "center" }} ><img src={fromImageToUrl(produto.foto)} width={200} height={200} /></div>
-                <div style={{ textAlign: "left" }}><h4>R$: {twoDecimals(produto.preco)}</h4></div>
-                <div><h4>Categoria: {produto.categoria_pro.nome_categoria_pro}</h4></div>
-              </a>
-            </Link>
-          ))}
+          <Produtos />
         </div>
 
       </main>
@@ -59,10 +73,4 @@ export default function Produtos({ produtos }) {
       </footer>
     </div>
   )
-}
-
-export async function getStaticProps() {
-  const { data: produtos } = await axios.get(
-    `${API_URL}/produtos`);
-  return { props: { produtos } };
 }
