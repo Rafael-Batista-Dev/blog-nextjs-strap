@@ -3,24 +3,22 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '../../styles/Home.module.css'
-import products from '../../products.json'
-import { fromImageToUrl } from '../../utils/urls'
+import { fromImageToUrl, API_URL } from '../../utils/urls'
 import { twoDecimals } from '../../utils/format'
 import axios from 'axios'
 
-const product = products[0]
+export default function Product({ produto }) {
 
-export default function Product() {
-
+  console.log(produto);
 
   return (
     <div className={styles.container}>
       <Head>
         {
-          product.meta_title && <title>{product.meta_title}</title>
+          produto.meta_title && <title>{produto.meta_title}</title>
         }
         {
-          product.meta_description && <meta name="description" content={product.meta_description} />
+          produto.meta_description && <meta name="description" content={produto.meta_description} />
         }
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -37,10 +35,10 @@ export default function Product() {
         </p>
         <div className={styles.grid} style={{ width: "650px" }}>
           <div className={styles.card} style={{ textAlign: "center" }}>
-            <div><h2 style={{ fontSize: "20px", textAlign: 'justify' }}>{product.nome}</h2></div>
-            <div style={{ padding: " 20px 0" }}><img src={fromImageToUrl(product.foto)} width={200} height={200} /></div>
-            <div><p style={{ fontSize: "12px", textAlign: "justify" }}>{product.descricao}</p></div>
-            <div style={{ textAlign: "left" }}><h3>R$: {twoDecimals(product.preco)}</h3></div>
+            <div><h2 style={{ fontSize: "20px", textAlign: 'justify' }}>{produto.nome}</h2></div>
+            <div style={{ padding: " 20px 0" }}><img src={fromImageToUrl(produto.foto)} width={200} height={200} /></div>
+            <div><p style={{ fontSize: "12px", textAlign: "justify" }}>{produto.descricao}</p></div>
+            <div style={{ textAlign: "left" }}><h3>R$: {twoDecimals(produto.preco)}</h3></div>
           </div>
         </div>
 
@@ -60,4 +58,29 @@ export default function Product() {
       </footer>
     </div>
   )
+}
+
+
+export async function getStaticProps({ params: { slug } }) {
+  const produtos_res = await fetch(`${API_URL}/produtos/?slug=${slug}`)
+  const found = await produtos_res.json()
+
+  return {
+    props: {
+      produto: found[0]
+    }
+  }
+}
+
+export async function getStaticPaths() {
+  const produtos_res = await fetch(`${API_URL}/produtos/`)
+  const produtos = await produtos_res.json()
+
+  return {
+    paths: produtos.map(produto => ({
+      params: { slug: String(produto.slug) }
+    })),
+    fallback: false
+  }
+
 }
