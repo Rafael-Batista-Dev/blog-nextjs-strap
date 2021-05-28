@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pages",
+  "info": {
+    "name": "page",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "pageName": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "pageName",
+      "required": true
+    },
+    "paragraph": {
+      "type": "component",
+      "repeatable": true,
+      "component": "page.paragraph"
+    },
+    "body": {
+      "type": "dynamiczone",
+      "components": [
+        "page.ask",
+        "page.travel-tips",
+        "page.contact"
+      ]
+    },
+    "metaDescripton": {
+      "type": "text",
+      "required": true
+    },
+    "metaTitle": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

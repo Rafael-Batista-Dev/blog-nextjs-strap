@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_page_card_contacts",
+  "info": {
+    "name": "cardContact",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "contactData": {
+      "type": "string",
+      "required": true
+    },
+    "contactDescription": {
+      "type": "richtext",
+      "required": true
+    },
+    "contactIcon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    }
+  }
+}

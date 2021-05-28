@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_page_paragraphs",
+  "info": {
+    "name": "paragraph",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "titleParagraph": {
+      "type": "string"
+    },
+    "imgParagraph": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "descriptionParagraph": {
+      "type": "richtext"
+    }
+  }
+}

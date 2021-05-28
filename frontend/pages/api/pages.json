@@ -1,0 +1,456 @@
+[
+  {
+    "id": 1,
+    "page": "Blog CAPO VIAGENS",
+    "slug": "contato-capo-viagens",
+    "published_at": "2021-05-28T19:50:06.000Z",
+    "created_at": "2021-05-28T16:53:01.000Z",
+    "updated_at": "2021-05-28T22:20:35.000Z",
+    "header": null,
+    "title": "Contato Capo Viagens",
+    "description": "O SAC da CAPO Viagens atende no telefone 0000-0000 nas capitais e regiões metropolitanas, e no número (21) 0000-0000, nas demais localidades do Brasil.",
+    "pageName": "Contato CAPO Viagens",
+    "metaDescripton": "O SAC da CAPO Viagens atende no telefone",
+    "metaTitle": "Contato Capo Viagens",
+    "paragraph": [
+      {
+        "id": 5,
+        "titleParagraph": "A CAPO Viagens possui SAC 0800?",
+        "descriptionParagraph": "Não, a CAPO Viagen não possui nenhum número de telefone 0800.",
+        "imgParagraph": {
+          "id": 20,
+          "name": "img03.jpeg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 703,
+          "height": 351,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_img03.jpeg",
+              "hash": "thumbnail_img03_84448f8d93",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 122,
+              "size": 8.58,
+              "path": null,
+              "url": "/uploads/thumbnail_img03_84448f8d93.jpeg"
+            },
+            "small": {
+              "name": "small_img03.jpeg",
+              "hash": "small_img03_84448f8d93",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 25.25,
+              "path": null,
+              "url": "/uploads/small_img03_84448f8d93.jpeg"
+            }
+          },
+          "hash": "img03_84448f8d93",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "size": 41.63,
+          "url": "/uploads/img03_84448f8d93.jpeg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T19:34:56.000Z",
+          "updated_at": "2021-05-28T19:34:56.000Z"
+        }
+      },
+      {
+        "id": 6,
+        "titleParagraph": "A CAPO Viagens tem WhatsApp?",
+        "descriptionParagraph": "A CAPO Viagens ainda não possui nenhum contato oficial de WhatsApp.\n\nÉ provável que a empresa passe a usar o app como um canal de vendas ou atendimento em algum momento, porém, ela ainda não disponibiliza nenhum contato desse tipo.\n\n*Se receber mensagens no WhatsApp de alguém se passando pela CAPO Viagens, não passe nenhum dado pessoal e bloqueie o contato imediatamente.",
+        "imgParagraph": {
+          "id": 19,
+          "name": "img06.jpeg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 703,
+          "height": 351,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_img06.jpeg",
+              "hash": "thumbnail_img06_593c2ef0ca",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 122,
+              "size": 6.49,
+              "path": null,
+              "url": "/uploads/thumbnail_img06_593c2ef0ca.jpeg"
+            },
+            "small": {
+              "name": "small_img06.jpeg",
+              "hash": "small_img06_593c2ef0ca",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 18.47,
+              "path": null,
+              "url": "/uploads/small_img06_593c2ef0ca.jpeg"
+            }
+          },
+          "hash": "img06_593c2ef0ca",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "size": 29.1,
+          "url": "/uploads/img06_593c2ef0ca.jpeg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T19:33:09.000Z",
+          "updated_at": "2021-05-28T19:33:09.000Z"
+        }
+      }
+    ],
+    "body": [
+      
+    ]
+  },
+  {
+    "id": 2,
+    "page": null,
+    "slug": "sobre-nos",
+    "published_at": "2021-05-28T19:50:09.000Z",
+    "created_at": "2021-05-28T19:35:38.000Z",
+    "updated_at": "2021-05-28T22:48:19.000Z",
+    "header": null,
+    "title": "Somos agência de viagens especializada em emissões de passagens",
+    "description": "Somos agência de viagens especializada em emissões de passagens aéreas nacionais e internacionais com milhas. Começamos em abril de 2018 na cidade de Macaé atendendo clientes de todo o Brasil pelas redes sociais.",
+    "pageName": "Sobre Nós",
+    "metaDescripton": "Somos agência de viagens especializada em emissões de passagens aéreas nacionais e internacionais com milhas",
+    "metaTitle": "Somos agência de viagens especializada em emissões de passagens",
+    "paragraph": [
+      {
+        "id": 1,
+        "titleParagraph": "Nos últimos anos",
+        "descriptionParagraph": "Nos últimos anos nos especializamos em venda de passagens com milhas internacionais, assim temos conseguido melhor preço que a concorrência nas passagens aéreas. Durante a pandemia do COVID-19 todos nossos clientes foram reembolsados assim que solicitado.",
+        "imgParagraph": {
+          "id": 19,
+          "name": "img06.jpeg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 703,
+          "height": 351,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_img06.jpeg",
+              "hash": "thumbnail_img06_593c2ef0ca",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 122,
+              "size": 6.49,
+              "path": null,
+              "url": "/uploads/thumbnail_img06_593c2ef0ca.jpeg"
+            },
+            "small": {
+              "name": "small_img06.jpeg",
+              "hash": "small_img06_593c2ef0ca",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 18.47,
+              "path": null,
+              "url": "/uploads/small_img06_593c2ef0ca.jpeg"
+            }
+          },
+          "hash": "img06_593c2ef0ca",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "size": 29.1,
+          "url": "/uploads/img06_593c2ef0ca.jpeg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T19:33:09.000Z",
+          "updated_at": "2021-05-28T19:33:09.000Z"
+        }
+      },
+      {
+        "id": 2,
+        "titleParagraph": "Nosso principal diferencial",
+        "descriptionParagraph": "Podemos assegurar que nosso principal diferencial e maior conquista é o atendimento personalizado de qualidade, mesmo durante a pandemia todos os clientes foram atendidos e os casos resolvidos com satisfação.",
+        "imgParagraph": {
+          "id": 22,
+          "name": "img01.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 703,
+          "height": 351,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_img01.jpg",
+              "hash": "thumbnail_img01_e0c50ca976",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 122,
+              "size": 6.95,
+              "path": null,
+              "url": "/uploads/thumbnail_img01_e0c50ca976.jpg"
+            },
+            "small": {
+              "name": "small_img01.jpg",
+              "hash": "small_img01_e0c50ca976",
+              "ext": ".jpg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 22.26,
+              "path": null,
+              "url": "/uploads/small_img01_e0c50ca976.jpg"
+            }
+          },
+          "hash": "img01_e0c50ca976",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 37.15,
+          "url": "/uploads/img01_e0c50ca976.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T22:28:40.000Z",
+          "updated_at": "2021-05-28T22:28:40.000Z"
+        }
+      },
+      {
+        "id": 3,
+        "titleParagraph": "Começamos o ano de 2021",
+        "descriptionParagraph": "Começamos o ano de 2021 melhorando nossa imagem e website para atingir novos clientes com intuito de oferecer atendimento de qualidade para todos, com preços competitivo no mercado, emissões rápidas e auxilio no pós venda.",
+        "imgParagraph": {
+          "id": 21,
+          "name": "Devices CAPO Viagens.png",
+          "alternativeText": "",
+          "caption": "",
+          "width": 4000,
+          "height": 2667,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_Devices CAPO Viagens.png",
+              "hash": "thumbnail_Devices_CAPO_Viagens_97c6b5149e",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 234,
+              "height": 156,
+              "size": 34.16,
+              "path": null,
+              "url": "/uploads/thumbnail_Devices_CAPO_Viagens_97c6b5149e.png"
+            },
+            "large": {
+              "name": "large_Devices CAPO Viagens.png",
+              "hash": "large_Devices_CAPO_Viagens_97c6b5149e",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 1000,
+              "height": 667,
+              "size": 545.5,
+              "path": null,
+              "url": "/uploads/large_Devices_CAPO_Viagens_97c6b5149e.png"
+            },
+            "medium": {
+              "name": "medium_Devices CAPO Viagens.png",
+              "hash": "medium_Devices_CAPO_Viagens_97c6b5149e",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 750,
+              "height": 500,
+              "size": 304.21,
+              "path": null,
+              "url": "/uploads/medium_Devices_CAPO_Viagens_97c6b5149e.png"
+            },
+            "small": {
+              "name": "small_Devices CAPO Viagens.png",
+              "hash": "small_Devices_CAPO_Viagens_97c6b5149e",
+              "ext": ".png",
+              "mime": "image/png",
+              "width": 500,
+              "height": 333,
+              "size": 136.47,
+              "path": null,
+              "url": "/uploads/small_Devices_CAPO_Viagens_97c6b5149e.png"
+            }
+          },
+          "hash": "Devices_CAPO_Viagens_97c6b5149e",
+          "ext": ".png",
+          "mime": "image/png",
+          "size": 9658.92,
+          "url": "/uploads/Devices_CAPO_Viagens_97c6b5149e.png",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T22:28:22.000Z",
+          "updated_at": "2021-05-28T22:28:22.000Z"
+        }
+      },
+      {
+        "id": 4,
+        "titleParagraph": "Nosso melhor aliado hoje é a tecnologia",
+        "descriptionParagraph": "Nosso melhor aliado hoje é a tecnologia, pois conseguimos fornecer a todos uma experiência de viagem acessível e personalizada.\n\n\nFaça sua cotação conosco e converse com nossos agentes.",
+        "imgParagraph": {
+          "id": 20,
+          "name": "img03.jpeg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 703,
+          "height": 351,
+          "formats": {
+            "thumbnail": {
+              "name": "thumbnail_img03.jpeg",
+              "hash": "thumbnail_img03_84448f8d93",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 245,
+              "height": 122,
+              "size": 8.58,
+              "path": null,
+              "url": "/uploads/thumbnail_img03_84448f8d93.jpeg"
+            },
+            "small": {
+              "name": "small_img03.jpeg",
+              "hash": "small_img03_84448f8d93",
+              "ext": ".jpeg",
+              "mime": "image/jpeg",
+              "width": 500,
+              "height": 250,
+              "size": 25.25,
+              "path": null,
+              "url": "/uploads/small_img03_84448f8d93.jpeg"
+            }
+          },
+          "hash": "img03_84448f8d93",
+          "ext": ".jpeg",
+          "mime": "image/jpeg",
+          "size": 41.63,
+          "url": "/uploads/img03_84448f8d93.jpeg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-28T19:34:56.000Z",
+          "updated_at": "2021-05-28T19:34:56.000Z"
+        }
+      }
+    ],
+    "body": [
+      {
+        "__component": "page.ask",
+        "id": 4,
+        "title": "Como a CAPO Viagens pode te ajudar?",
+        "description": "Faça uma pesquisa com a origem e destino que deseja viajar, escolha a quantidade de passageiros e as data da viagem. ",
+        "questions": [
+          {
+            "id": 7,
+            "title": "Como comprar no site da CAPO Viagens?",
+            "descriptions": "Faça uma pesquisa com a origem e destino que deseja viajar, escolha a quantidade de passageiros e as data da viagem. Após a seleção clique em consultar e escolha os voos desejados, na pagina seguinte coloque os dados e faça o pagamento. Após a confirmação do pagamento será enviado um email para você, em minutos nossos agentes de viagens irão emitir a passagem que será enviada pelo email com a passagem com o Bilhete da Cia aérea escolhida. Lembrando que será gerado no momento do pagamento um código interno da CAPO Viagens que será usado somente para entrar em contato podermos para responder a você o mais rápido possível."
+          },
+          {
+            "id": 8,
+            "title": "Como saber o meu tempo de espera?",
+            "descriptions": "Durante a compra você pode clicar em mais detalhes e terá todos os dados do voo escolhido e se permanecer a dúvida consulte nossos agentes de viagens pelo chat e teremos o prazer em ajudá-lo."
+          },
+          {
+            "id": 9,
+            "title": "Como me proteger na minha viagem do covid 19",
+            "descriptions": "Além da recomendação da Infraero de que se dirijam aos aeroportos apenas pessoas que precisam viajar de avião, existem ainda as medidas de segurança determinadas pela Agência Nacional de Vigilância Sanitária (Anvisa)."
+          },
+          {
+            "id": 10,
+            "title": "Bagagem e check in",
+            "descriptions": "A adição de bagagem é feita posteriormente a compra da passagem. Favor consultar por email ou chat a inserção e valores da bagagem. Ajudaremos nossos clientes com dúvidas e orientações no check-in."
+          }
+        ]
+      },
+      {
+        "__component": "page.contact",
+        "id": 2,
+        "title": "Fale conosco",
+        "contactData": null,
+        "contactDescription": null,
+        "description": "Não consegue encontrar o que você está procurando? Não se preocupe aqui você tem os contatos da nossa central de atendimento.",
+        "cardContact": [
+          {
+            "id": 1,
+            "title": "Telefone:",
+            "contactData": "(+55)22 99969-3015",
+            "contactDescription": "Horários de atendimento Segunda a sexta-feira: 8h às 22h Sábado: 9h às 21h Domingo e feriados: 10h às 21h",
+            "contactIcon": {
+              "id": 23,
+              "name": "telefone.png",
+              "alternativeText": "",
+              "caption": "",
+              "width": 120,
+              "height": 120,
+              "formats": null,
+              "hash": "telefone_ceb32ea880",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 2.51,
+              "url": "/uploads/telefone_ceb32ea880.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "created_at": "2021-05-28T22:37:37.000Z",
+              "updated_at": "2021-05-28T22:37:37.000Z"
+            }
+          },
+          {
+            "id": 2,
+            "title": "Whatsapp:",
+            "contactData": "(+55)21 2042-0553",
+            "contactDescription": "Horários de atendimento Segunda a sexta-feira: 9h às 20h Sábado: 9h às 18h",
+            "contactIcon": {
+              "id": 24,
+              "name": "whatsapp.png",
+              "alternativeText": "",
+              "caption": "",
+              "width": 120,
+              "height": 120,
+              "formats": null,
+              "hash": "whatsapp_4263b5bc31",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 4.61,
+              "url": "/uploads/whatsapp_4263b5bc31.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "created_at": "2021-05-28T22:47:43.000Z",
+              "updated_at": "2021-05-28T22:47:43.000Z"
+            }
+          },
+          {
+            "id": 3,
+            "title": "Pós venda:",
+            "contactData": "(55)22 99969-3015",
+            "contactDescription": "Horário de atendimento Segunda a sexta-feira: 8h às 20h Sábado: 9h às 13h",
+            "contactIcon": {
+              "id": 25,
+              "name": "suporte.png",
+              "alternativeText": "",
+              "caption": "",
+              "width": 120,
+              "height": 120,
+              "formats": null,
+              "hash": "suporte_8790ffe935",
+              "ext": ".png",
+              "mime": "image/png",
+              "size": 3.24,
+              "url": "/uploads/suporte_8790ffe935.png",
+              "previewUrl": null,
+              "provider": "local",
+              "provider_metadata": null,
+              "created_at": "2021-05-28T22:48:15.000Z",
+              "updated_at": "2021-05-28T22:48:15.000Z"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

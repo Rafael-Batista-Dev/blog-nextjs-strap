@@ -36,6 +36,6 @@ export default useProdutos
 
 export async function getStaticProps() {
   const { data: produtos } = await axios.get(
-    `${API_URL}/produtos`);
+    `${API_URL}/produtos?_limit=5&_sort=id:DESC`);
   return { props: { produtos } };
 }

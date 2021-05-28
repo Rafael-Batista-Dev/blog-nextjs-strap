@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_page_travel_tips",
+  "info": {
+    "name": "travelTips",
+    "icon": "map"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "icon": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

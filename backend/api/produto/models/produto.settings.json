@@ -45,6 +45,9 @@
     },
     "categoria_pro": {
       "model": "categoria-pro"
+    },
+    "autor": {
+      "model": "autor"
     }
   }
 }
