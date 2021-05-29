@@ -58,6 +58,39 @@ export default function sobreNos({ pages }) {
             </div>
           ))}
       </>
+      <br />
+      <br />
+      <hr />
+      <br />
+      <br />
+      <h1>
+        {
+          pages.body.find((item) => item.__component === "page.contact")
+            .title
+        }
+      </h1>
+      <div>
+        <p>
+          {
+            pages.body.find((item) => item.__component === "page.contact")
+              .description
+          }
+        </p>
+      </div>
+      <hr />
+      <>
+        {pages.body
+          .find((item) => item.__component === "page.contact")
+          .cardContact.map((card) => (
+            <div key={card.id}>
+              <h2>{card.title}</h2>
+              <h3>{card.contactData}</h3>
+              <div><img src={fromImageToUrl(card.contactIcon)} width={80} height={80} /></div>
+              <p>{card.contactDescription}</p>
+              <hr />
+            </div>
+          ))}
+      </>
     </>
   )
 }
