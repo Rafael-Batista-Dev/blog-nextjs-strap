@@ -1,12 +1,12 @@
 import React from 'react'
 import { fromImageToUrl, API_URL } from '../utils/urls'
-import pp from './api/pages.json'
+// import pp from './api/pages.json'
 import axios from 'axios'
 
-const page1 = pp[1]
+// const page1 = pp[1]
 
 export default function sobreNos({ pages }) {
-  console.log(page1);
+  // console.log(page1);
   return (
     <>
       <div>
