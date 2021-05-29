@@ -31,16 +31,33 @@ export default function sobreNos({ pages }) {
       <br />
       <br />
       <br />
-      {/* <div>
-        {pages.paragraph.map(parag => (
-          <div key={parag.id}>
-            <h3>{parag.titleParagraph}</h3>
-            <div><img src={fromImageToUrl(parag.imgParagraph)} width={400} height={200} /></div>
-            <p>{parag.descriptionParagraph}</p>
-          </div>
-        ))
+      <hr />
+      <h1>
+        {
+          pages.body.find((item) => item.__component === "page.ask")
+            .title
         }
-      </div> */}
+      </h1>
+      <div>
+        <p>
+          {
+            pages.body.find((item) => item.__component === "page.ask")
+              .description
+          }
+        </p>
+      </div>
+      <hr />
+      <>
+        {pages.body
+          .find((item) => item.__component === "page.ask")
+          .questions.map((question) => (
+            <div key={question.id}>
+              <h2>{question.title}</h2>
+              <p>{question.descriptions}</p>
+              <hr />
+            </div>
+          ))}
+      </>
     </>
   )
 }
