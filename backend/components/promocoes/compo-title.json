@@ -1,0 +1,43 @@
+{
+  "collectionName": "components_promocoes_compo_titles",
+  "info": {
+    "name": "compo_title",
+    "icon": "american-sign-language-interpreting",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "destiny": {
+      "type": "string",
+      "required": true
+    },
+    "descount_price": {
+      "type": "decimal",
+      "required": true
+    },
+    "real_price": {
+      "type": "decimal",
+      "required": true
+    },
+    "link": {
+      "type": "text",
+      "required": true
+    },
+    "imagem": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true,
+      "pluginOptions": {}
+    },
+    "percentage": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,4 +1,3 @@
-import React from 'react'
 import { fromImageToUrl, API_URL } from '../utils/urls'
 // import pp from './api/pages.json'
 import axios from 'axios'

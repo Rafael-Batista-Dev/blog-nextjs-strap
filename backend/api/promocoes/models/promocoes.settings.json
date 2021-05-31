@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promocoes",
+  "info": {
+    "name": "promocoes",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "descriptions": {
+      "type": "richtext"
+    },
+    "compo_title": {
+      "type": "component",
+      "repeatable": true,
+      "component": "promocoes.compo-title"
+    }
+  }
+}
